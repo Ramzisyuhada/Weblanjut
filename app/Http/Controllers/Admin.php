@@ -101,9 +101,9 @@ public function destroy($id)
     return redirect()->back()->with('hapus', 'Berhasil di dihapus');
 }
 
-  public function aksitambah(Request $request)
+  public function aksitambah(Request $request1)
   {
-    $request->validate([
+    $request1->validate([
         'email' => 'unique:users',
         'name' => 'unique:users',
         'nomertelepon' => 'unique:users'
@@ -113,11 +113,11 @@ public function destroy($id)
         'nomertelepon.unique' => 'nomertelepon sudah digunakan',
     ]);
     user::create([
-        'email' => $request->email,
-        'name' => $request->name,
-        'alamat' => $request->alamat,
-        'nomertelepon' => $request->nomertelepon,
-        'password' => Hash::make($request->password),
+        'email' => $request1->email,
+        'name' => $request1->name,
+        'alamat' => $request1->alamat,
+        'nomertelepon' => $request1->nomertelepon,
+        'password' => Hash::make($request1->password),
     ]);
     return redirect('/admin/dashboard')->with('tambah', 'Berhasil di ditambahkan');;
   }   
