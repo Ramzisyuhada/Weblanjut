@@ -20,7 +20,7 @@ class Transaksi extends Model
         'user_layanan',
         'user_status',
         'harga',
-        'Berat',
+        'Berat1',
 
     ];
     public function class()
