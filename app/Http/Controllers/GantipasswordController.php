@@ -13,7 +13,7 @@ use App\Http\Requests\UpdateProfileRequest;
 
 class GantipasswordController extends Controller
 {
-    public function pwdedit(UpdateProfileRequest $request)
+    public function pwdedit(UpdateProfileRequest $request1)
     {
         $request->validate([
             'current_password' => ['required'],
