@@ -10,7 +10,7 @@
     <br/>
     <br/>
     <center>
-        <h2>Register</h2>
+        <h2>Register Customer</h2>
     </center>
     <br/>
     <br/>
