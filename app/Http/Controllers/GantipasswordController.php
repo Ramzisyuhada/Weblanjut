@@ -15,7 +15,7 @@ class GantipasswordController extends Controller
 {
     public function pwdedit(UpdateProfileRequest $request1)
     {
-        $request->validate([
+        $request1->validate([
             'current_password' => ['required'],
             'password'         => ['required', 'min:8', 'confirmed'],
         ]);
