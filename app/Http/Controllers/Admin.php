@@ -22,7 +22,7 @@ class Admin extends Controller
 {
     public function register()
     {
-        return view('/admin/registeradmin');
+        return view('/admin/t');
     }
     public function actionregister(request $request)
     {
